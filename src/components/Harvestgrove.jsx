@@ -1,136 +1,12 @@
+import Footer from "./Footer";
+import { Header } from "./Header";
+
 const HarvestGrove = () => {
-  const navLinks = [
-    "explore",
-    "services",
-    "individuals",
-    "business",
-    "blog",
-    "FAQs",
-  ];
+  
 
   return (
     <div className=" min-h-screen overflow-hidden font-poppins relative">
-      <header className="w-full h-[4.5rem] flex items-center z-10 absolute top-0 justify-between px-20 border-b-[#090909]/10 border">
-        <div className="flex gap-8 items-center">
-          <div className="flex items-center gap-2">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M16.0659 15.4295C16.0457 16.6572 21.3213 16.6056 21.3213 16.6056C21.3213 16.6056 21.3606 18.1668 19.2302 20.6526C16.4843 23.8577 10.5493 25.0435 8.57548 21.4005C8.32029 20.9455 8.17135 20.4392 8.13972 19.9192C8.1081 19.3991 8.19459 18.8787 8.39278 18.3965C8.6228 18.8916 8.92855 19.3483 9.29914 19.7503C9.94264 20.4422 10.7243 20.9929 11.5942 21.3671C10.8869 20.8643 10.2363 20.2871 9.65377 19.6454C9.23578 19.1325 8.91499 18.5484 8.70706 17.9215L9.09637 17.4016C10.0148 18.3667 11.0341 19.2316 12.137 19.9817C12.7939 20.4849 13.5678 20.8152 14.3871 20.9422C13.5994 20.7037 12.8672 20.3118 12.2331 19.7894C11.2185 18.9103 10.3178 17.9091 9.55188 16.8089C9.90284 16.3622 10.282 15.8975 10.6801 15.4054C11.2967 15.8402 11.9645 16.1985 12.6684 16.4724C13.5579 16.7964 14.4995 16.9559 15.4466 16.9429C14.5457 16.7133 13.6602 16.4273 12.7955 16.0866C12.1521 15.8218 11.58 15.4107 11.1251 14.8864C11.8645 13.9752 12.6502 13.0647 13.4453 12.1544C13.9642 12.4642 14.527 12.6945 15.1149 12.8375C15.6644 12.9893 16.2472 12.9732 16.7873 12.7912C16.2378 12.743 15.6968 12.6255 15.1771 12.4415C14.6953 12.2705 14.2631 11.9843 13.9186 11.6082C14.9882 10.3792 20.0685 4.71012 20.0685 4.71012L15.3448 9.59097C14.975 8.69408 14.7009 7.76109 14.527 6.80732C14.4386 6.12443 14.4688 5.43153 14.6164 4.75887C14.6164 4.75887 14.4834 5.50463 14.4096 6.60225C14.4426 7.74167 14.6269 8.87179 14.9579 9.96319L12.0577 12.9534C11.5539 12.1507 11.1144 11.3099 10.7433 10.4386C10.2423 9.10775 9.83652 7.74338 9.52896 6.35568C9.60402 7.66327 9.83843 8.957 10.227 10.2085C10.6012 11.3106 11.065 12.3805 11.6138 13.4078L9.60162 15.48C8.68844 14.5585 7.85079 13.5658 7.09668 12.5116C6.45475 11.2615 5.89285 9.97234 5.41436 8.65182C5.60416 10.0713 6.06378 11.4421 6.7687 12.6909C7.67324 14.1555 8.66348 15.4923 9.07244 16.0346L8.41116 16.7162C7.35232 16.2933 6.37065 15.7 5.50552 14.9601C4.44857 13.901 3.49148 12.7478 2.64626 11.5149C3.32702 12.8659 4.18373 14.1219 5.19428 15.2505C6.00204 15.9805 6.89222 16.6149 7.84697 17.1409C7.72755 17.2498 7.60518 17.3493 7.47988 17.4396C6.83513 17.5458 6.17429 17.5001 5.55047 17.3063C4.94701 17.0477 4.39601 16.6819 3.92451 16.2268C4.30596 16.8291 4.85669 17.3069 5.50847 17.6011C5.88568 17.776 6.28791 17.8916 6.70079 17.9439C2.55924 20.1842 -0.854359 14.8739 0.476198 10.2049C1.53039 6.52871 5.67221 3.14341 5.67221 3.14341C5.52782 4.37798 5.59516 5.62801 5.87137 6.84026C6.32678 8.50987 7.54078 11.4847 9.0384 11.3339C10.536 11.1831 6.2453 6.12617 6.83378 3.0979C7.33096 0.539049 12.6299 0.201529 12.6299 0.201529C12.2316 0.378915 11.8775 0.641365 11.5928 0.970229C11.3081 1.29909 11.0998 1.68629 10.9827 2.1043C10.4486 3.51753 11.5114 8.34591 12.6681 8.5958C14.1681 8.86058 11.092 3.36192 13.7924 1.22717C15.3355 0.00599308 17.362 1.57219 18.9595 2.12483C20.0127 2.45336 21.1311 2.51934 22.2159 2.31695C22.2159 2.31695 22.2855 3.16762 22.3746 5.08974C22.4636 7.01187 23.6307 8.32384 22.6736 9.49002C21.7164 10.6562 18.1894 9.97946 18.5162 11.0006C18.843 12.0217 22.7861 10.5538 22.7861 10.5538C22.7861 10.5538 22.7709 11.4769 22.6431 13.5986C22.5153 15.7203 16.0945 14.2572 16.0659 15.4295Z"
-                fill="#0EA91E"
-              />
-            </svg>
-            <h1 className="uppercase font-bold font-poppins">harvestgrove</h1>
-          </div>
-          <nav className="flex gap-5 text-sm ">
-            {navLinks.map((link, index) => (
-              <a
-                key={index}
-                href="/"
-                className="capitalize text-black/80 hover:text-black"
-              >
-                {link}
-              </a>
-            ))}
-          </nav>
-        </div>
-        <div
-          className="flex group cursor-pointer
-        "
-        >
-          <button className="h-12 rounded-full px-7 border border-black text-sm">
-            Contact us
-          </button>
-          <button className="h-12 rounded-full px-3 border border-black text-sm group-hover:rotate-45 transition-transform ">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M5.63605 18.364L18.364 5.63604M18.364 5.63604V14.1213M18.364 5.63604H9.87869"
-                stroke="black"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </button>
-        </div>
-      </header>
-      <div className="w-screen">
-        <div className=" flex items-center relative pt-20 pb-5 h-screen w-[95vw] max-w-[1500px] mx-auto">
-          <div className="absolute right-[25%] top-20 bg-white w-[50%] min-w-[700px] h-[180px] flex items-left justify-center flex-col text-left  p-6 text-[3.7rem] font-medium capitalize rounded-bl-3xl">
-            <div className="absolute top-0 -right-12 z-10  w-12 h-6 bg-transparent rounded-tl-3xl shadow-[-2rem_0px_0px_0px_white]"></div>
-            <div className="absolute top-0 -left-12 z-10  w-12 h-6 bg-transparent rounded-tr-3xl shadow-[2rem_0px_0px_0px_white]"></div>
-            <div className="absolute bottom-0 -right-12 z-10  w-12 h-6 bg-transparent rounded-bl-3xl shadow-[-2rem_0px_0px_0px_white]"></div>
-            <p className="leading-[4.7rem] font-bold">nurturing nature,</p>
-            <p className="leading-[4.7rem] font-bold">harvesting excellence</p>
-          </div>
-          <div className="absolute left-[35%] max-w-[50%] top-[260px] bg-white h-[140px]   p-3 px-8  text-sm rounded-bl-3xl rounded-tr-3xl ">
-            {/* <div className="absolute top-0 -right-12 z-10  w-12 h-6 bg-transparent rounded-tl-3xl shadow-[-2rem_0px_0px_0px_white]"></div> */}
-            <div className="absolute top-0 -left-12 z-10  w-12 h-6 bg-transparent rounded-tr-3xl shadow-[1.5rem_0px_0px_0px_white]"></div>
-            <div className="absolute bottom-0 -right-12 z-10  w-12 h-6 bg-transparent rounded-bl-3xl shadow-[-2rem_0px_0px_0px_white]"></div>
-            <p className="leading-[1.7rem] text-sm">
-              At HarvestGrove, we are passionate about agriculture and committed
-              to providing the highest quality produce and services to our
-              customers. With a legacy of farming excellence spanning 10 years,
-            </p>
-          </div>
-          <div className="absolute right-0 w-[50%] top-[400px] bg-white   p-5 pt-12 text-sm rounded-bl-3xl  ">
-            {/* <div className="absolute top-0 -right-12 z-10  w-12 h-6 bg-transparent rounded-tl-3xl shadow-[-2rem_0px_0px_0px_white]"></div> */}
-            <div className="absolute top-0 -left-12 z-10  w-12 h-6 bg-transparent rounded-tr-3xl shadow-[2rem_0px_0px_0px_white]"></div>
-            <div className="absolute -top-12 right-0 z-10  w-6 h-12 bg-transparent rounded-br-3xl shadow-[0rem_2rem_0px_0px_white]"></div>
-            <div className="absolute -bottom-12 right-0 z-10  w-6 h-12 bg-transparent rounded-tr-3xl shadow-[0rem_-2rem_0px_0px_white]"></div>
-            <div className="flex p-2 rounded-full border border-gray-400 w-max gap-3">
-              <div className="flex relative w-20 items-center">
-                <img src="/avt1.png" alt="" className="w-12 h-12 " />
-                <img
-                  src="/avt2.png"
-                  alt=""
-                  className="w-12 h-12   absolute left-6"
-                />
-                <img
-                  src="/avt3.png"
-                  alt=""
-                  className="w-12 h-12   absolute left-12"
-                />
-              </div>
-              <div className="px-3">
-                <p className="font-semibold text-2xl">200k</p>
-                <p className="capitalize text-xs">happy customers</p>
-              </div>
-            </div>
-          </div>
-          <div className="bg-white absolute bottom-[15%] left-10  rounded-3xl p-2">
-            <img src="/cardimg.png" alt="" className="rounded-2xl" />
-            <div className="flex flex-col gap-3 py-4 p-3">
-              <div className="bg-gray-200 h-3 rounded"></div>
-              <div className="bg-gray-200 h-3 rounded w-[90%]"></div>
-              <div className="bg-gray-200 h-3 rounded w-[80%]"></div>
-            </div>
-            <div className="flex items-center p-2 gap-2 border-t">
-              <img src="/avtcard.png" alt="" className="rounded-2xl" />
-              <div className="capitalize">
-                <p className=" font-bold text-sm">recce eunice</p>
-                <p className="text-xs">rural roots ranch</p>
-              </div>
-            </div>
-          </div>
-          <img
-            src="/bg.png"
-            alt=""
-            className="rounded-3xl w-full object-cover h-full mx-auto"
-          />
-        </div>
-      </div>
+       <Header/>
       <div className="w-[85%] mx-auto text-center p-20">
         <p className="uppercase text-4xl font-medium leading-[3.8rem]">
           Our journey began 2013,
@@ -351,8 +227,6 @@ const HarvestGrove = () => {
           <div className="flex-1 relative ">
             <div className="absolute right-0">
               <div className=" bg-white flex items-left justify-center flex-col text-left  p-4  rounded-bl-3xl">
-                <div className="absolute top-0 -left-12 z-10  w-12 h-6 bg-transparent rounded-tr-3xl shadow-[1rem_0px_0px_0px_white]"></div>
-                <div className="absolute -bottom-12 right-0 z-10  w-6 h-12 bg-transparent rounded-tr-3xl shadow-[0rem_-1.4rem_0px_0px_white]"></div>
                 <div className="flex">
                   <button className="h-12 rounded-full px-7 border border-black text-sm">
                     Shop now
@@ -381,110 +255,18 @@ const HarvestGrove = () => {
           </div>
         </div>
       </div>
-      <div className="w-[95vw] flex relative max-w-[1200px] mx-auto py-20 ">
-        <img src="/orange.png" alt="" className="rounded-3xl" />
+      <div className="w-[95vw] flex relative max-w-[1200px] mx-auto py-5 ">
+        <img src="/orangebg.png" alt="" className="rounded-3xl" />
         <div className="absolute text-[1.7rem] capitalize font-bold">
-          <div className=" bg-white flex items-left justify-center flex-col text-left  p-2 pr-6   rounded-br-3xl">
-            <div className="absolute top-0 -right-12 z-10  w-12 h-6 bg-transparent rounded-tl-3xl shadow-[-2rem_0px_0px_0px_white]"></div>
+          <div className="  flex items-left justify-center flex-col text-left  p-2 pr-6   rounded-br-3xl">
             <p className="z-20 relative">cultivating agricultural</p>
           </div>
-          <div className=" w-max relative bg-white  p-2 pr-6  rounded-br-3xl ">
-            <div className="absolute top-0 -right-12  w-12 h-6 bg-transparent rounded-tl-3xl shadow-[-2rem_0px_0px_0px_white]"></div>
-            <div className="absolute -bottom-12 left-0  w-6 h-12 bg-transparent rounded-tl-3xl shadow-[0px_-2rem_0px_0px_white]"></div>
+          <div className=" w-max relative p-2 pr-6  rounded-br-3xl ">
             <p className="z-20 relative">sustainability</p>
           </div>
         </div>
       </div>
-      <div className="w-[95vw] relative max-w-[1200px] mx-auto py-10">
-        <div className="flex gap-4 ">
-          <div className="bg-black text-white rounded-3xl flex flex-col gap-5 p-8 w-[33%]">
-            <p className="text-2xl">
-              Crafting Agriculture, For Farmers, By Innovators.
-            </p>
-            <p className="text-sm">
-              Join our community of 2000+ passionate cultivators, innovators,
-              stewards of excellence, where dedication to innovation, creativity
-              and sustainable farming practices flourishes.
-            </p>
-            <div className="flex">
-              <button className="h-12 capitalize rounded-full px-7 border bg-white text-black text-sm">
-                shop now
-              </button>
-              <button className="h-12 rounded-full px-3 border bg-white text-sm">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.63605 18.364L18.364 5.63604M18.364 5.63604V14.1213M18.364 5.63604H9.87869"
-                    stroke="black"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div className="flex-1 h-[295px] gap-20 bg-[#0EA91E] bg-opacity-10 rounded-3xl flex capitalize p-10 text-xs">
-            <div className="flex flex-col gap-6">
-              <p>links</p>
-              <div className="flex flex-col gap-4">
-                <a href="/">explore</a>
-                <a href="/">services</a>
-                <a href="/">individuals</a>
-                <a href="/">business</a>
-                <a href="/">blogs</a>
-              </div>
-            </div>
-            <div className="flex flex-col gap-6">
-              <p>communities</p>
-              <div className="flex flex-col gap-4">
-                <a href="/">twitter</a>
-                <a href="/">facebook</a>
-                <a href="/">instagram</a>
-                <a href="/">whatsapp</a>
-              </div>
-            </div>
-            <div className="flex flex-col gap-6">
-              <p>support</p>
-              <div className="flex flex-col gap-4">
-                <a href="/">FAQs</a>
-                <a href="/">contact</a>
-                <a href="/">help center</a>
-              </div>
-            </div>
-            <div className="flex flex-1 justify-end  gap-2 h-max items-center">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16.0659 15.4295C16.0457 16.6572 21.3213 16.6056 21.3213 16.6056C21.3213 16.6056 21.3606 18.1668 19.2302 20.6526C16.4843 23.8577 10.5493 25.0435 8.57548 21.4005C8.32029 20.9455 8.17135 20.4392 8.13972 19.9192C8.1081 19.3991 8.19459 18.8787 8.39278 18.3965C8.6228 18.8916 8.92855 19.3483 9.29914 19.7503C9.94264 20.4422 10.7243 20.9929 11.5942 21.3671C10.8869 20.8643 10.2363 20.2871 9.65377 19.6454C9.23578 19.1325 8.91499 18.5484 8.70706 17.9215L9.09637 17.4016C10.0148 18.3667 11.0341 19.2316 12.137 19.9817C12.7939 20.4849 13.5678 20.8152 14.3871 20.9422C13.5994 20.7037 12.8672 20.3118 12.2331 19.7894C11.2185 18.9103 10.3178 17.9091 9.55188 16.8089C9.90284 16.3622 10.282 15.8975 10.6801 15.4054C11.2967 15.8402 11.9645 16.1985 12.6684 16.4724C13.5579 16.7964 14.4995 16.9559 15.4466 16.9429C14.5457 16.7133 13.6602 16.4273 12.7955 16.0866C12.1521 15.8218 11.58 15.4107 11.1251 14.8864C11.8645 13.9752 12.6502 13.0647 13.4453 12.1544C13.9642 12.4642 14.527 12.6945 15.1149 12.8375C15.6644 12.9893 16.2472 12.9732 16.7873 12.7912C16.2378 12.743 15.6968 12.6255 15.1771 12.4415C14.6953 12.2705 14.2631 11.9843 13.9186 11.6082C14.9882 10.3792 20.0685 4.71012 20.0685 4.71012L15.3448 9.59097C14.975 8.69408 14.7009 7.76109 14.527 6.80732C14.4386 6.12443 14.4688 5.43153 14.6164 4.75887C14.6164 4.75887 14.4834 5.50463 14.4096 6.60225C14.4426 7.74167 14.6269 8.87179 14.9579 9.96319L12.0577 12.9534C11.5539 12.1507 11.1144 11.3099 10.7433 10.4386C10.2423 9.10775 9.83652 7.74338 9.52896 6.35568C9.60402 7.66327 9.83843 8.957 10.227 10.2085C10.6012 11.3106 11.065 12.3805 11.6138 13.4078L9.60162 15.48C8.68844 14.5585 7.85079 13.5658 7.09668 12.5116C6.45475 11.2615 5.89285 9.97234 5.41436 8.65182C5.60416 10.0713 6.06378 11.4421 6.7687 12.6909C7.67324 14.1555 8.66348 15.4923 9.07244 16.0346L8.41116 16.7162C7.35232 16.2933 6.37065 15.7 5.50552 14.9601C4.44857 13.901 3.49148 12.7478 2.64626 11.5149C3.32702 12.8659 4.18373 14.1219 5.19428 15.2505C6.00204 15.9805 6.89222 16.6149 7.84697 17.1409C7.72755 17.2498 7.60518 17.3493 7.47988 17.4396C6.83513 17.5458 6.17429 17.5001 5.55047 17.3063C4.94701 17.0477 4.39601 16.6819 3.92451 16.2268C4.30596 16.8291 4.85669 17.3069 5.50847 17.6011C5.88568 17.776 6.28791 17.8916 6.70079 17.9439C2.55924 20.1842 -0.854359 14.8739 0.476198 10.2049C1.53039 6.52871 5.67221 3.14341 5.67221 3.14341C5.52782 4.37798 5.59516 5.62801 5.87137 6.84026C6.32678 8.50987 7.54078 11.4847 9.0384 11.3339C10.536 11.1831 6.2453 6.12617 6.83378 3.0979C7.33096 0.539049 12.6299 0.201529 12.6299 0.201529C12.2316 0.378915 11.8775 0.641365 11.5928 0.970229C11.3081 1.29909 11.0998 1.68629 10.9827 2.1043C10.4486 3.51753 11.5114 8.34591 12.6681 8.5958C14.1681 8.86058 11.092 3.36192 13.7924 1.22717C15.3355 0.00599308 17.362 1.57219 18.9595 2.12483C20.0127 2.45336 21.1311 2.51934 22.2159 2.31695C22.2159 2.31695 22.2855 3.16762 22.3746 5.08974C22.4636 7.01187 23.6307 8.32384 22.6736 9.49002C21.7164 10.6562 18.1894 9.97946 18.5162 11.0006C18.843 12.0217 22.7861 10.5538 22.7861 10.5538C22.7861 10.5538 22.7709 11.4769 22.6431 13.5986C22.5153 15.7203 16.0945 14.2572 16.0659 15.4295Z"
-                  fill="#0EA91E"
-                />
-              </svg>
-              <h1 className="uppercase text-2xl font-bold font-poppins">
-                harvestgrove
-              </h1>
-            </div>
-          </div>
-        </div>
-        <div className="flex justify-between text-xs py-6 items-center capitalize">
-          <p>&copy;2023 HarvestGrove</p>
-          <div className="flex items-center gap-2">
-            <a href="/">privacy policy</a>
-            <div className="w-2 h-2 rounded-full bg-lime-200"></div>
-            <a href="/">terms of use</a>
-          </div>
-        </div>
-      </div>
+      <Footer/>
     </div>
   );
 };
