@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: ["Poppins"],
+        mono: ["Space Mono"],
+        dm: ["DM Sans"],
+        open: ["Open Sans"],
+      },
+    },
   },
   plugins: [],
 }
