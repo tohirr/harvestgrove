@@ -13,7 +13,7 @@ export const Header = () => {
     "FAQs",
   ];
   return (
-    <div className="max-w-7xl mx-auto relative">
+    <div className="max-w-7xl mx-auto relative min-h-[100vh]">
         <header className="w-full p-4 flex items-center justify-between">
         <div className="flex gap-8 items-center">
           <div className="flex items-center gap-2">

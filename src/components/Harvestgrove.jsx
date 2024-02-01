@@ -1,3 +1,5 @@
+import { MdArrowOutward } from "react-icons/md";
+import Button from "./Button";
 import Footer from "./Footer";
 import { Header } from "./Header";
 
@@ -225,37 +227,17 @@ const HarvestGrove = () => {
             </div>
           </div>
           <div className="flex-1 relative ">
-            <div className="absolute right-0">
-              <div className=" bg-white flex items-left justify-center flex-col text-left  p-4  rounded-bl-3xl">
-                <div className="flex">
-                  <button className="h-12 rounded-full px-7 border border-black text-sm">
-                    Shop now
-                  </button>
-                  <button className="h-12 rounded-full px-3 border border-black text-sm">
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5.63605 18.364L18.364 5.63604M18.364 5.63604V14.1213M18.364 5.63604H9.87869"
-                        stroke="black"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
+            <div className="absolute right-4">
+              <div className="flex items-left justify-center flex-col text-left  py-1 ">
+                              <Button icon={<MdArrowOutward />}>shop now</Button>          
+
               </div>
             </div>
             <img src="/farm.png" alt="" className="rounded-3xl " />
           </div>
         </div>
       </div>
-      <div className="w-[95vw] flex relative max-w-[1200px] mx-auto py-5 ">
+      <div className="px-2 flex relative max-w-7xl mx-auto py-5 ">
         <img src="/orangebg.png" alt="" className="rounded-3xl" />
         <div className="absolute text-[1.7rem] capitalize font-bold">
           <div className="  flex items-left justify-center flex-col text-left  p-2 pr-6   rounded-br-3xl">
