@@ -31,26 +31,8 @@ const HarvestGrove = () => {
         <div className="bg-[#0EA91E] bg-opacity-10 flex  items-end rounded-3xl w-[60%]">
           <img src="sectimg1.png" alt="" className="h-[450px]" />
           <div className="flex p-8">
-            <button className="h-12 rounded-full px-7 border border-black text-sm">
-              Contact us
-            </button>
-            <button className="h-12 rounded-full px-3 border border-black text-sm">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5.63605 18.364L18.364 5.63604M18.364 5.63604V14.1213M18.364 5.63604H9.87869"
-                  stroke="black"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
+                          <Button icon={<MdArrowOutward />}>contact us</Button>          
+
           </div>
         </div>
         <div className="absolute right-0 p-10 w-[60%] flex flex-col gap-8 items-end">
@@ -68,9 +50,9 @@ const HarvestGrove = () => {
           </p>
         </div>
       </div>
-      <div className="w-[95vw]  relative max-w-[1200px] mx-auto py-10 ">
+      <div className="px-2  relative max-w-7xl mx-auto py-10 ">
         <div className="flex justify-between">
-          <p className="text-5xl font-bold leading-[3.5rem]">
+          <p className="text-[2.5rem] leading-[3.2rem] font-semibold">
             We Provide <br /> Fresh Agro Product
           </p>
           <div className="flex text-sm flex-col leading-[1.7rem] gap-3 w-[30%]">
@@ -79,31 +61,11 @@ const HarvestGrove = () => {
               innovation has allowed us to grow into the trusted agricultural
               hub we are today.
             </p>
-            <div className="flex">
-              <button className="h-12 rounded-full px-7 border border-black text-sm">
-                Shop now
-              </button>
-              <button className="h-12 rounded-full px-3 border border-black text-sm">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.63605 18.364L18.364 5.63604M18.364 5.63604V14.1213M18.364 5.63604H9.87869"
-                    stroke="black"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </button>
-            </div>
+                          <Button icon={<MdArrowOutward />}>shop now</Button>          
+
           </div>
         </div>
-        <div className="flex justify-between py-10">
+        <div className="flex justify-between py-6">
           <div className="p-3 rounded-3xl bg-[#0EA91E] bg-opacity-10 w-[32%] flex flex-col gap-2">
             <img src="/slide1.png" alt="" className="pb-3" />
             <p className="font-semibold capitalize px-2">premium produce</p>
@@ -133,9 +95,9 @@ const HarvestGrove = () => {
           </div>
         </div>
       </div>
-      <div className="w-[95vw]  relative max-w-[1200px] mx-auto py-10 ">
+      <div className="px-2 relative max-w-7xl mx-auto py-10 ">
         <div className="flex justify-between items-center">
-          <p className="text-5xl font-bold leading-[3.5rem] capitalize  ">
+          <p className="text-[2.5rem] leading-[3.2rem] font-semibold capitalize  ">
             cultivating a future <br />{" "}
             <svg
               width="64"
@@ -229,8 +191,7 @@ const HarvestGrove = () => {
           <div className="flex-1 relative ">
             <div className="absolute right-4">
               <div className="flex items-left justify-center flex-col text-left  py-1 ">
-                              <Button icon={<MdArrowOutward />}>shop now</Button>          
-
+                <Button icon={<MdArrowOutward />}>shop now</Button>          
               </div>
             </div>
             <img src="/farm.png" alt="" className="rounded-3xl " />
@@ -239,13 +200,10 @@ const HarvestGrove = () => {
       </div>
       <div className="px-2 flex relative max-w-7xl mx-auto py-5 ">
         <img src="/orangebg.png" alt="" className="rounded-3xl" />
-        <div className="absolute text-[1.7rem] capitalize font-bold">
-          <div className="  flex items-left justify-center flex-col text-left  p-2 pr-6   rounded-br-3xl">
-            <p className="z-20 relative">cultivating agricultural</p>
-          </div>
-          <div className=" w-max relative p-2 pr-6  rounded-br-3xl ">
-            <p className="z-20 relative">sustainability</p>
-          </div>
+        <div className="absolute text-[2.1rem] leading-[3.2rem] py-1 capitalize font-semibold">
+            cultivating sustainability<br/>
+          agriculture
+          
         </div>
       </div>
       <Footer/>

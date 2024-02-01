@@ -42,8 +42,10 @@ const Footer = () => {
           </div>    
         </div></div>
         <div className="flex flex-1 lg:justify-end  gap-2 h-max items-center">
-        <img src="pandaemoji.svg" className="lg:h-[60px] h-[40px]"/>
-         <img src="panda.svg" className="lg:h-[60px] h-[40px]"/>         
+        <div className="flex items-center gap-2">
+            <img src="/leaflogo.svg" />
+            <h1 className="uppercase font-bold font-poppins hidden lg:block">harvestgrove</h1>
+          </div>      
         </div>
         </div>
         <div className="flex justify-between py-6 col-span-7 items-center ">
