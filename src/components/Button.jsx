@@ -8,7 +8,7 @@ const Button = ({icon, children, color, variant}) => {
     
         default:
             return (
-                <button className="group rounded-full w-max  border border-[#000] text-black flex items-center gap-1 p-1 pl-4"><span>{children}</span><div className="p-4 rounded-full bg-[#0e0e0e]/30">{icon}</div></button>
+                <button className="group rounded-full w-max  border border-[#000] text-black flex items-center gap-1 p-1 pl-4"><span>{children}</span><div className="p-3 rounded-full bg-[#0e0e0e]/30">{icon}</div></button>
                 )
             break;
     }

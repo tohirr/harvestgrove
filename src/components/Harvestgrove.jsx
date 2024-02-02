@@ -9,7 +9,7 @@ const HarvestGrove = () => {
   return (
     <div className=" min-h-screen overflow-hidden font-poppins px-2 relative">
        <Header/>
-      <div className="mx-auto text-center max-w-7xl my-6 lg:p-20 p-2">
+      <div className="mx-auto text-center max-w-7xl my-6 lg:p-20 p-1">
         <p className="uppercase lg:text-4xl text-2xl font-medium lg:leading-[3.8rem]">
           Our journey began 2013,
           <img
@@ -27,10 +27,10 @@ const HarvestGrove = () => {
           community.
         </p>
       </div>
-      <div className=" flex flex-col lg:flex-row relative max-w-7xl mx-auto my-10">
+      <div className=" flex flex-col lg:flex-row relative  max-w-7xl mx-auto my-10">
         <div className="bg-[#0EA91E] bg-opacity-10 rounded-3xl h-full w-full lg:w-[60%] absolute"></div>
         <div className=" flex  flex-col lg:flex-row items-end z-10 lg:w-[60%]">
-          <img src="sectimg1.png" alt="" className="lg:h-[450px] " />
+          <img src="sectimg1.png" alt="" className="lg:h-[450px] inline" />
         </div>
         <div className="lg:absolute right-0 lg:p-10 py-8 p-2 lg:w-[60%] z-10 flex flex-col gap-8 items-end">
           <p className="lg:text-2xl text-xl font-medium lg:leading-10">
@@ -50,7 +50,7 @@ const HarvestGrove = () => {
           <Button icon={<MdArrowOutward />}>contact us</Button>          
           </div>
       </div>
-      <div className="  relative max-w-7xl mx-auto py-10">
+      <div className="  relative max-w-7xl mx-auto p-1 py-5">
         <div className="flex flex-col lg:flex-row justify-between">
           <p className="lg:text-[2.5rem] lg:leading-[3.2rem] text-3xl font-semibold">
             We Provide <br /> Fresh Agro Product
@@ -94,33 +94,11 @@ const HarvestGrove = () => {
           </div>
         </div>
       </div>
-      <div className=" relative max-w-7xl mx-auto lg:py-10 py-5 ">
+      <div className=" relative max-w-7xl mx-auto py-3 p-1">
         <div className="flex flex-col gap-3 lg:flex-row justify-between lg:items-center">
           <p className="lg:text-[2.5rem] lg:leading-[3.2rem] text-3xl font-semibold capitalize  ">
             cultivating a future <br />{" "}
-            <svg
-              width="64"
-              height="64"
-              viewBox="0 0 64 64"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="inline-block align-middle mx-2"
-            >
-              <rect
-                x="0.75"
-                y="0.75"
-                width="62.5"
-                height="62.5"
-                rx="31.25"
-                stroke="#090909"
-                strokeOpacity="0.1"
-                strokeWidth="1.5"
-              />
-              <path
-                d="M39.5623 38.4302C39.5264 40.6129 48.9053 40.5211 48.9053 40.5211C48.9053 40.5211 48.9752 43.2965 45.1878 47.7157C40.3062 53.4137 29.755 55.5218 26.246 49.0455C25.7924 48.2365 25.5276 47.3364 25.4714 46.4119C25.4151 45.4874 25.5689 44.5622 25.9212 43.7049C26.3302 44.5851 26.8737 45.397 27.5325 46.1118C28.6765 47.3418 30.0662 48.3208 31.6126 48.9861C30.3552 48.0922 29.1987 47.066 28.163 45.9252C27.4199 45.0134 26.8496 43.975 26.4799 42.8605L27.1721 41.9362C28.8048 43.652 30.6169 45.1897 32.5777 46.5232C33.7455 47.4177 35.1213 48.0049 36.5779 48.2306C35.1774 47.8066 33.8757 47.11 32.7484 46.1812C30.9447 44.6184 29.3436 42.8385 27.9819 40.8825C28.6058 40.0884 29.2798 39.2623 29.9876 38.3875C31.0838 39.1604 32.2709 39.7974 33.5224 40.2843C35.1037 40.8604 36.7776 41.1439 38.4614 41.1207C36.8597 40.7126 35.2855 40.2042 33.7483 39.5985C32.6044 39.1277 31.5874 38.3969 30.7787 37.4648C32.0931 35.8449 33.49 34.2263 34.9035 32.608C35.826 33.1586 36.8266 33.568 37.8717 33.8223C38.8486 34.0922 39.8846 34.0635 40.8447 33.74C39.868 33.6543 38.9061 33.4454 37.9823 33.1183C37.1257 32.8143 36.3573 32.3056 35.7449 31.6369C37.6465 29.452 46.678 19.3736 46.678 19.3736L38.2804 28.0507C37.6229 26.4562 37.1356 24.7976 36.8265 23.102C36.6693 21.8879 36.7231 20.6561 36.9855 19.4603C36.9855 19.4603 36.7491 20.7861 36.6179 22.7374C36.6764 24.763 37.0042 26.7721 37.5926 28.7124L32.4367 34.0284C31.541 32.6014 30.7596 31.1065 30.0999 29.5576C29.2093 27.1916 28.4879 24.7661 27.9411 22.2991C28.0746 24.6237 28.4913 26.9236 29.1821 29.1485C29.8473 31.1077 30.6718 33.0099 31.6475 34.8361L28.0703 38.5201C26.4468 36.8818 24.9577 35.1171 23.6171 33.2429C22.4758 31.0205 21.4769 28.7287 20.6263 26.3811C20.9637 28.9047 21.7808 31.3415 23.034 33.5616C24.642 36.1654 26.4025 38.5419 27.1295 39.506L25.9539 40.7178C24.0715 39.9659 22.3263 38.9112 20.7883 37.5958C18.9093 35.7129 17.2078 33.6628 15.7052 31.4711C16.9154 33.8728 18.4385 36.1056 20.235 38.112C21.671 39.4098 23.2536 40.5376 24.9509 41.4728C24.7386 41.6663 24.5211 41.8433 24.2983 42.0038C23.1521 42.1926 21.9773 42.1114 20.8682 41.7668C19.7954 41.3071 18.8159 40.6568 17.9776 39.8478C18.6558 40.9184 19.6349 41.7679 20.7936 42.2908C21.4642 42.6018 22.1792 42.8074 22.9132 42.9003C15.5505 46.883 9.48187 37.4425 11.8473 29.1422C13.7214 22.6067 21.0847 16.5884 21.0847 16.5884C20.828 18.7832 20.9477 21.0054 21.4387 23.1605C22.2483 26.1287 24.4066 31.4173 27.069 31.1493C29.7314 30.8812 22.1035 21.891 23.1497 16.5074C24.0335 11.9584 33.4538 11.3583 33.4538 11.3583C32.7458 11.6737 32.1163 12.1403 31.6102 12.7249C31.1041 13.3096 30.7337 13.9979 30.5255 14.7411C29.5761 17.2535 31.4654 25.8373 33.5218 26.2815C36.1886 26.7522 30.7198 16.9768 35.5205 13.1817C38.2638 11.0107 41.8665 13.7951 44.7065 14.7775C46.579 15.3616 48.5671 15.4789 50.4957 15.1191C50.4957 15.1191 50.6194 16.6314 50.7777 20.0485C50.9361 23.4656 53.0109 25.798 51.3093 27.8712C49.6077 29.9444 43.3374 28.7413 43.9184 30.5566C44.4994 32.372 51.5093 29.7623 51.5093 29.7623C51.5093 29.7623 51.4823 31.4035 51.2551 35.1754C51.0279 38.9473 39.6132 36.3462 39.5623 38.4302Z"
-                fill="#0EA91E"
-              />
-            </svg>{" "}
+            <img src="leaflogo.svg" className="p-2 rounded-full w-12 mr-2 border inline align-middle "/>
             of agriculture <br /> sustainability
           </p>
           <div className="flex text-sm lg:text-right flex-col leading-[1.7rem] gap-3 lg:w-[35%]">
@@ -132,7 +110,7 @@ const HarvestGrove = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row justify-between lg:py-10 py-2 gap-5">
+        <div className="flex flex-col lg:flex-row justify-between py-3 gap-5">
           <div className="lg:w-[40%] relative">
             <div className="lg:h-[70%] h-[220px] rounded-3xl text-xs flex bg-[#0EA91E] bg-opacity-10 p-5 relative">
               <p className="lg:text-3xl text-2xl font-semibold lg:leading-[3.5rem] text-[#0EA91E] capitalize ">
@@ -199,7 +177,7 @@ const HarvestGrove = () => {
           </div>
         </div>
       </div>
-      <div className=" flex relative max-w-7xl mx-auto py-5 ">
+      <div className=" flex relative max-w-7xl mx-auto py-5 p-1">
         <img src="/orangebg.png" alt="" className="hidden lg:flex" />
         <img src="/orandesm.png" alt="" className="lg:hidden" />
 

@@ -27,7 +27,7 @@ export const Header = () => {
         </div>
         <Button icon={<MdArrowOutward />}>contact us</Button>          
       </header>
-      <div className="relative lg:p-2">
+      <div className="relative ">
         <img src="/grovepic.png" alt="" className="hidden lg:block"/>
         <img src="/mobilefarm.png" alt="" className="lg:hidden rounded-b-3xl"/>
         <div className="absolute lg:left-[25%] top-0">
@@ -37,7 +37,7 @@ export const Header = () => {
         </div>
         <img src="/grovecard.jpg" alt="" className="absolute lg:rounded-2xl rounded-xl max-w-[50%] lg:top-[30%] top-[40%] left-[5%]" />
         <img src="/tag1.png" alt="" className="absolute lg:top-[65%] top-[75%] w-[6rem] right-[20vw]" />
-        <img src="/tag2.png" alt="" className="absolute lg:top-[75%] top-[85%] right-[60vw] w-[7rem]" />
+        <img src="/tag2.png" alt="" className="absolute lg:top-[75%] top-[85%] right-[50vw] w-[7rem]" />
         </div>
         </div>
   )
