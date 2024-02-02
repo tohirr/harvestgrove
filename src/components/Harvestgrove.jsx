@@ -94,7 +94,7 @@ const HarvestGrove = () => {
           </div>
         </div>
       </div>
-      <div className=" relative max-w-7xl mx-auto lg:py-10 py-8 ">
+      <div className=" relative max-w-7xl mx-auto lg:py-10 py-5 ">
         <div className="flex flex-col gap-3 lg:flex-row justify-between lg:items-center">
           <p className="lg:text-[2.5rem] lg:leading-[3.2rem] text-3xl font-semibold capitalize  ">
             cultivating a future <br />{" "}
@@ -132,7 +132,7 @@ const HarvestGrove = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row justify-between py-10 gap-5">
+        <div className="flex flex-col lg:flex-row justify-between lg:py-10 py-2 gap-5">
           <div className="lg:w-[40%] relative">
             <div className="lg:h-[70%] h-[220px] rounded-3xl text-xs flex bg-[#0EA91E] bg-opacity-10 p-5 relative">
               <p className="lg:text-3xl text-2xl font-semibold lg:leading-[3.5rem] text-[#0EA91E] capitalize ">
@@ -199,7 +199,7 @@ const HarvestGrove = () => {
           </div>
         </div>
       </div>
-      <div className="px-2 flex relative max-w-7xl mx-auto py-5 ">
+      <div className=" flex relative max-w-7xl mx-auto py-5 ">
         <img src="/orangebg.png" alt="" className="hidden lg:flex" />
         <img src="/orandesm.png" alt="" className="lg:hidden" />
 
