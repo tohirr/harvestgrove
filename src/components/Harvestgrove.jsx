@@ -32,7 +32,7 @@ const HarvestGrove = () => {
         <div className=" flex  flex-col lg:flex-row items-end z-10 lg:w-[60%]">
           <img src="sectimg1.png" alt="" className="lg:h-[450px] inline" />
         </div>
-        <div className="lg:absolute right-0 lg:p-10 py-8 p-2 lg:w-[60%] z-10 flex flex-col gap-8 items-end">
+        <div className="lg:absolute right-0 lg:p-10 py-6 p-2 lg:w-[60%] z-10 flex flex-col gap-5 items-end">
           <p className="lg:text-2xl text-xl font-medium lg:leading-10">
             Our diverse range of crops, from succulent fruits to crisp
             vegetables, showcases the fertile abundance of our land. Every
@@ -46,7 +46,7 @@ const HarvestGrove = () => {
             nurturing the land that feeds us.
           </p>
         </div>               
- <div className="flex lg:absolute left-[35%] bottom-[1rem] align-end p-8">
+ <div className="flex lg:absolute left-[35%] bottom-[1rem] align-end md:p-8 p-5">
           <Button icon={<MdArrowOutward />}>contact us</Button>          
           </div>
       </div>
