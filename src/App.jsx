@@ -9,8 +9,9 @@ function App() {
 
   return (
   <HarvestGrove/>
+
     // <>
-    //   <div>
+    //   <div> the  have you and the way isyou
     //     <a href="https://vitejs.dev" target="_blank">
     //       <img src={viteLogo} className="logo" alt="Vite logo" />
     //     </a>

@@ -31,8 +31,8 @@ export const Header = () => {
         <img src="/grovepic.png" alt="" className="hidden lg:block"/>
         <img src="/mobilefarm.png" alt="" className="lg:hidden rounded-b-3xl"/>
         <div className="absolute lg:left-[25%] top-0">
-        <h2 className="relative lg:leading-[5rem] text-3xl p-4 lg:text-6xl capitalize">nurturing nature, <br/> harvesting excelence</h2>
-        <p className="relative text-xs lg:text-base lg:left-[22%] left-[5%] lg:max-w-[60%] max-w-[90%] p-2">At HarvestGrove, we are passionate about agriculture and committed to providing the highest quality produce and services to our customers. With a legacy of farming excellence spanning 10 years, </p>
+        <h2 className="relative lg:leading-[5rem] text-2xl md:p-4 p-2 lg:text-6xl capitalize">nurturing nature, <br/> harvesting excelence</h2>
+        <p className="relative text-xs lg:text-base lg:left-[22%] left-[3%] lg:max-w-[60%] max-w-[95%] p-2">At HarvestGrove, we are passionate about agriculture and committed to providing the highest quality produce and services to our customers. With a legacy of farming excellence spanning 10 years, </p>
         <img src="/customers.jpg" alt="" className="relative lg:left-[45%] left-[35%] lg:pt-10 pt-6 w-[35%] lg:w-[25%]"/>
         </div>
         <img src="/grovecard.jpg" alt="" className="absolute lg:rounded-2xl rounded-xl max-w-[50%] lg:top-[30%] top-[40%] left-[5%]" />
