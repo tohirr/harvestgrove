@@ -51,7 +51,7 @@ const HarvestGrove = () => {
           </div>
       </div>
       <div className="  relative max-w-7xl mx-auto p-1 py-5">
-        <div className="flex flex-col lg:flex-row justify-between">
+        <div className="flex flex-col px-2 lg:flex-row justify-between">
           <p className="lg:text-[2.5rem] lg:leading-[3.2rem] text-3xl font-semibold">
             We Provide <br /> Fresh Agro Product
           </p>
@@ -95,7 +95,7 @@ const HarvestGrove = () => {
         </div>
       </div>
       <div className=" relative max-w-7xl mx-auto py-3 p-1">
-        <div className="flex flex-col gap-3 lg:flex-row justify-between lg:items-center">
+        <div className="flex flex-col gap-3 px-2 lg:flex-row justify-between lg:items-center">
           <p className="lg:text-[2.5rem] lg:leading-[3.2rem] text-3xl font-semibold capitalize  ">
             cultivating a future <br />{" "}
             <img src="leaflogo.svg" className="p-2 rounded-full w-12 mr-2 border inline align-middle "/>
