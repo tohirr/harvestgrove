@@ -21,21 +21,21 @@ const Footer = () => {
         <div className="flex flex-col-reverse lg:flex-row  lg:gap-20 gap-5">
         <div className="flex  lg:gap-20 justify-between gap-2">
         <div className="flex flex-col gap-4">
-        <p className="text-lg capitalize">links</p>
+        <p className="md:text-lg text-xs capitalize">links</p>
           <div className="flex flex-col gap-2 text-[#0e0e0e]/80">
             {["explore","services","individuals","businesses","blogs"].map((link, index)=> 
             <Link key={index} href="/" variant="underline">{link}</Link>)}        
           </div>
         </div>
         <div className="flex flex-col gap-4">
-          <p className="text-lg capitalize">communities</p>
+          <p className="md:text-lg text-xs capitalize">communities</p>
           <div className="flex flex-col gap-2 text-[#0e0e0e]/80">
           {["twitter","facebook","instagram","whatsapp"].map((link, index)=> 
             <Link key={index} href="/" variant="">{link}</Link>)}
           </div>
         </div>
         <div className="flex flex-col gap-4">
-        <p className="text-lg capitalize">support</p>
+        <p className="md:text-lg text-xs capitalize">support</p>
         <div className="flex flex-col gap-2 text-[#0e0e0e]/80">
           {["FAQs","contact","help center"].map((link, index)=> 
             <Link key={index} href="/" variant="underline">{link}</Link>)}
@@ -48,7 +48,7 @@ const Footer = () => {
           </div>      
         </div>
         </div>
-        <div className="flex justify-between py-6 col-span-7 items-center ">
+        <div className="flex justify-between py-6 col-span-7 text-xs items-center ">
       <p>&copy;2024 uipanda</p>
       <div className="flex items-center gap-2">
         <a href="/">privacy policy</a>
