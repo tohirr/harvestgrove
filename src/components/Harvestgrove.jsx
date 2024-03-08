@@ -7,7 +7,7 @@ const HarvestGrove = () => {
   
 
   return (
-    <div className=" min-h-screen overflow-hidden font-poppins px-1 relative">
+    <div className=" min-h-screen overflow-hidden font-poppins md:px-1 relative">
        <Header/>
       <div className="mx-auto text-center max-w-7xl my-6 lg:p-20 p-1">
         <p className="uppercase lg:text-4xl text-2xl font-medium lg:leading-[3.8rem]">
