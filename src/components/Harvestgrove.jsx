@@ -64,7 +64,7 @@ const HarvestGrove = () => {
               <Button icon={<MdArrowOutward />}>shop now</Button>          
           </div>
         </div>
-        <div className="flex flex-col gap-3 lg:flex-row justify-between py-6">
+        <div className="flex flex-col gap-3 lg:flex-row justify-between md:py-6 py-2">
           <div className="p-3 rounded-3xl bg-[#0EA91E] bg-opacity-10 lg:w-[32%] flex flex-col gap-2">
             <img src="/slide1.png" alt="" className="pb-3" />
             <p className="font-semibold capitalize px-2">premium produce</p>
@@ -177,7 +177,7 @@ const HarvestGrove = () => {
           </div>
         </div>
       </div>
-      <div className=" flex relative max-w-7xl mx-auto py-5 p-1">
+      <div className=" flex relative max-w-7xl mx-auto md:py-5 p-1 py-2">
         <img src="/orangebg.png" alt="" className="hidden lg:flex" />
         <img src="/orandesm.png" alt="" className="lg:hidden" />
 

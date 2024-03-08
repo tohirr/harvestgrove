@@ -5,7 +5,7 @@ import Link from "./Link";
 
 const Footer = () => {
     return (
-    <div className=" relative max-w-7xl mx-auto font-dm  py-3">
+    <div className=" relative max-w-7xl mx-auto font-dm  md:py-3">
     <div className="flex flex-col lg:gap-4 gap-2 lg:grid-cols-12 lg:grid ">
       <div className="bg-black lg:col-span-4 text-white rounded-3xl flex flex-col justify-between gap-5 p-6 lg:p-8 ">
         <p className="text-3xl font-bold">Crafting Agriculture, For Farmers, By Innovators.
