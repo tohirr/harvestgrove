@@ -9,9 +9,9 @@ const HarvestGrove = () => {
   return (
     <div className=" min-h-screen overflow-hidden font-poppins md:px-1 relative">
        <Header/>
-      <div className="mx-auto text-center max-w-7xl my-6 lg:p-20 p-1">
+      <div className="mx-auto text-center max-w-7xl my-6 lg:p-10 p-2">
         <p className="uppercase lg:text-4xl text-2xl font-medium lg:leading-[3.8rem]">
-          Our journey began 2013,
+          Our journey began 2015,
           <img
             className="inline-block lg:h-[3.2rem] h-[2rem] align-middle lg:w-[200px] w-[90px] rounded-full mx-1 object-cover"
             src="/flatimg.png"
