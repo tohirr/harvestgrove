@@ -44,7 +44,7 @@ const Footer = () => {
         <div className="flex flex-1 lg:justify-end  gap-2 h-max items-center">
         <div className="flex items-center gap-2">
             <img src="/leaflogo.svg" />
-            <h1 className=" font-bold font-poppins ">ubuntufarms</h1>
+            <h1 className=" font-bold font-poppins ">harvestgrove</h1>
           </div>      
         </div>
         </div>
